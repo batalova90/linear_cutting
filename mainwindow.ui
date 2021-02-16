@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Расчет сортового материала</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>130</y>
+      <width>123</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="AddDetail">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Добавить деталь</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="barInStock">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Добавить заготовку</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="calculationButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Расчет</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="TableCutting">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>550</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>540</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSaveAsExcel"/>
+   <addaction name="actionInformation"/>
+   <addaction name="clearResult"/>
+   <addaction name="actioncreateGraphic"/>
+  </widget>
+  <action name="actionSaveAsExcel">
+   <property name="icon">
+    <iconset resource="picture/picture.qrc">
+     <normaloff>:/new/prefix1/excel.png</normaloff>:/new/prefix1/excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить в формате Excel</string>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="icon">
+    <iconset resource="picture/picture.qrc">
+     <normaloff>:/new/prefix1/syshelp.png</normaloff>:/new/prefix1/syshelp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+  <action name="clearResult">
+   <property name="icon">
+    <iconset resource="picture/picture.qrc">
+     <normaloff>:/new/prefix1/clear.png</normaloff>:/new/prefix1/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистка</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить результаты расчета</string>
+   </property>
+  </action>
+  <action name="actioncreateGraphic">
+   <property name="icon">
+    <iconset resource="picture/picture.qrc">
+     <normaloff>:/new/prefix1/graphic_2.png</normaloff>:/new/prefix1/graphic_2.png</iconset>
+   </property>
+   <property name="text">
+    <string>createGraphic</string>
+   </property>
+   <property name="toolTip">
+    <string>График расчета раскроя</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="picture/picture.qrc"/>
+ </resources>
+ <connections/>
+</ui>
