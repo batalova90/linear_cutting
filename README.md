@@ -5,3 +5,8 @@
 
 
 ![alt text](picture/mainWindow.png)
+![alt text](picture/dailogAddBarr.png)
+![alt text](picture/dialogAddDetail.png)
+![alt text](picture/createGraph.png)
+![alt text](picture/result(QTableWindget).png)
+![alt text](picture/writingResultsToExcel.png)
